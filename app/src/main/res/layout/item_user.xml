@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="cn.zmy.databindingadapterdemo.model.User"/>
+        <variable name="model"
+                  type="User"/>
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="60dp"
+                  android:layout_marginBottom="10dp"
+                  android:background="@android:color/darker_gray"
+                  android:gravity="center_vertical"
+                  android:orientation="vertical">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@{model.name}"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@{String.valueOf(model.age)}"/>
+    </LinearLayout>
+</layout>
